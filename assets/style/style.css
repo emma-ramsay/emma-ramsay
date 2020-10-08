@@ -14,3 +14,15 @@ h3 {
     background-color: white;
     border-radius: 4px;
 }
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.75s linear;
+    -moz-transition: opacity 0.75s linear;
+    -o-transition: opacity 0.75s linear;
+    transition: opacity 0.75s linear;
+}
+
+.fade.in {
+    opacity: 1;
+}

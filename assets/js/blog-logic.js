@@ -16,8 +16,13 @@ $(document).ready(() => {
     console.log("Page loaded!");
 
     for (i = 0; i < blogEntries.length; i++) {
-        let card = '<div class="card m-2"><div class="card-body"><span>' + blogEntries[i].blog_entry + '</span></div></div>';
+        let card = '<div class="card m-2 fade" id=blog-card'+ i +'><div class="card-body"><span>' + blogEntries[i].blog_entry + '</span></div></div>';
 
         $("#dynamic-body").append(card);
+    
     }
+
+    setTimeout(function () {
+        $(".card").addClass("in");
+    }, 2000);
 })
